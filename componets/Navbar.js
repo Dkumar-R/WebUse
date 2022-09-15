@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
-import Ime from '../public/—Pngtree—light effect cyber masked hacker_6560133.png'
+import use from '../public/hackster-svgrepo-com.svg'
 const Navbar = () => {
   const [open, setOpen] = useState(true)
   return (
     <>
-      <div className="mx-3">
+      <div className=" sticky top-0 z-50 w-full flex-none border-b bg-white border-slate-300 ">
         <div className=' md:max-w-7xl sm:max-w-4xl  mx-auto'>
-          <div className=' my-4'>
+          <div className='py-4 mx-3'>
             <nav className='flex justify-between font-medium'>
-              <span><Image src={Ime} width="44px" height="44px" alt="" sizes="" srcset="" /></span>
+                <Image src={use} width="45px" height="45px" />
 
               <ul className='sm:flex space-x-5 justify-center items-center hidden'>
                 <div className='flex space-x-5 px-3 border-r border-slate-300'>
@@ -39,7 +39,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <hr className='border-slate-300' />
     </>
   )
 }

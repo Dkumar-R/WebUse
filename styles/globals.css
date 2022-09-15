@@ -6,3 +6,7 @@
 .space-x{
     margin: 0 20px 0 20px;
 }
+
+.max-w-8xl {
+    max-width: 90rem;
+}
